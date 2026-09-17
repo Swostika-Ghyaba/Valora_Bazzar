@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.admin-page{
+    display: flex;
+}
+/* Sidebar */
+.side{
+    width: 20%;
+    position: fixed;
+}
+
+/* Main Content */
+.main-content {
+    width: 80%;
+    padding: 20px;
+    margin-left: 20%;
+    /* background-color: #D25D5D; */
+    background-color: #F7E9EE;
+
+}
+.main-content h2{
+    margin: 30px 0 40px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #760031;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.status {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+}
+
+.cards {
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    height: 130px;
+}
+
+.cards:hover{
+    border: 1px solid grey;
+}
+.cards h4{
+    font-family: "Display", playfair;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.card{
+    display: flex;
+    width: 100%;
+}
+
+.card p{
+text-align: center;}
+
+.card i{
+    color: palevioletred;
+    margin-left: 90px;
+    font-size: 35px;
+
+}
+
+
+/* For Orders */
+.orders{
+    width: 31%;
+}
+.view-orders{
+    margin-top: 5px;
+    height: 40px;
+    width: 100%;
+    background: #e8f5e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.view-orders button{
+        background: #e8f5e9;
+        color: black;
+        border: none !important;
+        cursor: pointer;
+}
+.view-orders button i{
+    margin-left: 10px;
+}
+/* For Users */
+.users{
+    width: 31%;
+}
+.view-users{
+    margin-top: 5px;
+    height: 40px;
+    width: 100%;
+    background: #e8f5e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.view-users button{
+        background: #e8f5e9;
+        color: black;
+        border: none !important;
+        cursor: pointer;
+}
+.view-users button i{
+    margin-left: 10px;
+}
+
+/* All vegetable information */
+.all-vegetables{
+    display: flex;
+    flex-direction: column;
+}
+
+/* All Order Information */
+.all-orders{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.admin-table {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;padding: 0 2px 0 2px;
+}
+
+.admin-table caption, 
+.admin-table td {
+    /* border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; */
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+}
+
+.admin-table td{
+    border: 1px solid #ddd;
+}
+.admin-table th {
+    font-family: "Display", playfair;
+    letter-spacing: 1.3px;
+    background-color: #760031;
+    border-left: 1px solid gray;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    padding: 0 10px 0 10px;
+}
+.admin-table caption{
+    text-align: center;
+    background-color: white;
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+    font-weight: 800;
+    padding: 20px 10px 30px 10px;
+    font-family: "Display", playfair;
+    /* text-decoration: underline; */
+}
+
+td{
+    font-family: "Display", playfair;
+}
+#order-table th,
+#order-table td {
+    border: 1px solid #ddd;
+}
+#order-table th{
+    height: 50px;
+    background-color: #760031;
+}
+/* .admin-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+} */
+
+ .admin-table tr:hover {
+    background-color: #ddd;
+}
+
+td img{
+    margin: 5px 10px 5px 10px;
+}
+
+.no-orders{
+    padding: 20px;
+    margin: 10px 60px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.no-orders h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    color: black;
+}
+.no-orders p{
+      font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: black;
+    font-weight: 300;
+}
+/* View All In Order */
+
+
+
+/* back Button */
+.back-btn{
+    border: none !important;
+    border-radius: 5px;
+    background-color: blue;
+    height: 35px;
+    width: 80px;
+    color: whitesmoke;
+    cursor: pointer;
+
+}
+
+#user-table th,
+#user-table td {
+    border: 1px solid #ddd;
+}
+#user-table th{
+    height: 50px;
+    background-color: #760031;
+}
+#user-table td{ padding: 10px 2px 10px 2px; }
+
+.card-wrapper {
+    width: 310px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.card-wrapper:hover{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.view-link {
+    margin-top: 15px;
+}
+
+.view-btn {
+    width: 100%;
+    background: #5A0E24;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.view-btn:hover {
+    background: #7a1230;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.section-header h3{
+    width: 90%;
+    color:brown;letter-spacing: 1.2px;
+    padding: 10px 0 20px 0;
+    border-bottom: 1px dashed grey;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+
+.back-btn {
+    background: blue;
+    font-family: "Display", playfair;
+    font-size: 15px;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.back-btn:hover {
+    background: darkblue;
+}
+
+

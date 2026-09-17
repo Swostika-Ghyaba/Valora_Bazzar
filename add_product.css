@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Sidebar */
+.side{
+    position: fixed;
+}
+
+.main-contents{
+    margin: 0 0 0 245px;
+    padding: 20px 0 20px 20px;
+    width: 79%;
+}
+.main-contents h2{
+    margin: 30px 0 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #760031;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* .add-veg{
+    background: #43a047;
+} */
+.product-detail{
+    display: flex;
+}
+/* Submit Button */
+.add-btn {
+    width: 150px !important;
+    height: 40px;
+    background: #5A0E24;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 30px 0 0 15px;
+}
+
+
+
+.add-btn:hover {
+    background: #4f081c;
+}
+
+#productForm h3{
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    color: brown;
+    border-bottom: 1px solid lightgray;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    padding: 30px 0 10px 10px;
+}
+.product-form{
+    height: 460px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.product-form label{
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.product-form input,
+.product-form select{
+    width: 85%;
+    height: 45px;
+    margin: 5px 0 15px 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid lightgrey;
+    outline: none;
+    font-family:'Times New Roman', Times, serif
+}
+
+.product-form input:hover,
+.product-form select:hover{
+    border: 1px solid #5A0E24;
+}
+
+.product-form input:focus,
+.product-form select:focus{
+    /* border-color: #4CAF50; */
+    border:2px solid #5A0E24;
+    color: black;
+}
+
+.product-form select
+{
+    background: white;
+    color: grey;
+}
+
+
+
+    
+.profile-card input { 
+    margin-left: 16px;
+    border: none !important;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+}
+
+
+.row {
+    display: flex;
+    gap: 5px;
+    margin: 15px 0;
+}
+.row1{
+   display: flex;
+    gap: 5px;
+    margin-bottom: 15px;  
+}
+.field {    
+   margin-left: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.field h5{
+    margin: 0 20px 10px 10px;
+    font-family: "Display", playfair;
+    font-size: 17px;
+    font-weight: 500;
+    color: #4f081c;
+}
+.field #description{ width:93%; min-height:80px; margin-left:10px; padding:10px; border-radius:6px; border:2px solid #ccc;font-family: 'Display', playfair; outline:none !important; }
+.field #description:hover{ border: 1px solid #5A0E24; }
+.field #description:focus{ border: 2px solid #5A0E24; }
+
+.profile-card input:hover{
+      opacity: 0.5;
+}

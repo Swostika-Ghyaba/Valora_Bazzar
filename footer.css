@@ -1,0 +1,290 @@
+/* * Back to home * */
+footer{
+    margin-bottom: 0px;
+}
+
+#home{
+    background-color: #5b6b7d;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-size: 0.85rem;
+}
+
+/* Information */
+.extra-info{
+    padding-top: 10px;
+    display: flex;
+}
+
+.pages{
+    width: 100vw;
+    height: 100px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pages ul{
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pages ul a{
+    margin-top: 20px;
+    font-size: 1rem;
+    display: block;
+    color: #dddddd;
+    font-family: "Display", playfair;
+}
+
+.pages ul p{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.pages ul a:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+
+/* Footer logo */
+.footer-logo{
+    width: 500px;
+}
+
+.footer-logo img{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin-top: 40px;
+    margin-left: 130px;
+    transition: box-shadow 5s ease, border-color 0.3s ease;
+}
+
+.footer-logo img:hover{
+    box-shadow: 0 2px 15px rgb(216, 202, 202);
+}
+
+.footer-logo p{
+    position: relative;
+    /* top: 5px; */
+    font-size: larger;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    font-family: "Display", playfair;
+    font-size: 16px;
+}
+.footer-logo h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 5px 0 10px 5px;
+    font-size: 16px;
+}
+
+section ul{
+    height: 17%;
+    width: 100%;
+}
+
+section a{
+    margin-top: 110px;
+    font-size: 20px;
+    color: white;
+}
+
+section p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.gr1{
+    margin-left: 120px;
+    color: rgb(129, 129, 240);
+    text-align: center;
+    padding: 1px 1px 0px 1px;
+}
+.gr2{
+    color: green;
+    margin-left: 15px;
+    padding: 1px 3px 0px 3px;
+    text-align: center;
+
+}
+.gr3{
+    color:  #E83C91;
+    margin-left: 15px;
+    padding: 1px 2px 0px 2px;
+    text-align: center;
+}
+
+.gr1:hover{
+    height: 10px;
+    width: 60x;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+.gr2:hover{
+    height: 10px;
+    width: 10%;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+}
+.gr3:hover{
+    height: 15px;
+    width: 50px;
+    color: #e92386;
+    background-color: white;
+    border: none;
+    border-radius: 5px;   
+}
+
+.cookie ul a{
+    cursor: pointer;
+    color: goldenrod;
+}
+
+.cookie ul a:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+/* Copyright */
+.copy-right{
+    font-family: "Display", playfair;
+    height: 520px;
+    width: 100vw;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.copyright{
+    margin-top: 90px;
+    border-top: 1px solid gray;
+    margin: 90px 0 0 0px;
+    font-size: 0.7rem;
+    /* text-align: center; */
+    padding-top: 20px;
+    font-size: 16px;
+}
+.copyright p{
+    margin-left: 20px;
+    width: fit-content;
+}
+.copyright p:hover{
+    color: orangered;
+}
+
+
+
+/* Extra Information */
+.extra-information{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 0 360px;
+    font-size: 16px;
+    padding: 30px 30px 0 30px;
+}
+
+
+.start-conversation{
+    display: flex;
+    margin:0 15px 10px 0;
+}
+
+.address{
+    margin:0 15px 10px 15px;
+
+}
+
+.hr{
+    border-top: 1px solid grey;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+/* Infornation */
+.information{
+    width: 61%;
+    margin: 0 60px 0 345px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Display", playfair;
+}
+
+.phone{
+    width:fit-content;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.phone p{
+    margin-top: 5px;
+    font-family: "Display", playfair;
+}
+.phone p:hover{
+    color: grey;
+}
+
+.phone p i{
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.support-email{
+    width:fit-content ;
+    margin-top: 5px;
+}
+
+.support-email a{
+    font-family: "Display", playfair;
+    color: white;
+    font-size: 1rem;
+}
+
+.support-email a:hover{
+    color: grey;
+}
+
+.support-email a i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.map{
+    width: fit-content;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.map a{
+        font-family: "Display", playfair;
+    margin-top: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+.map a:hover{
+    color: grey;
+}
+
+.map a i{
+    margin-right: 5px;
+}

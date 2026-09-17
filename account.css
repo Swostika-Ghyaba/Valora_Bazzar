@@ -1,0 +1,482 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background: #F7E9EE;
+  gap:32px;
+  min-height:100vh;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ---------- Shell ---------- */
+.user{
+  width: 100%;
+  padding: 40px 20px 30px;
+  display:flex;
+  flex-direction:column;
+}
+
+.account{
+  height: 760px;
+  width:100%;
+  background:white;
+  display:flex;
+  flex-direction:column;
+}
+
+.account h2{
+  padding: 20px 0 25px 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: #5A0E24;
+  letter-spacing: 2px;
+  border-bottom: 1px solid lightgray;
+}
+
+.title a{
+  text-decoration:none;
+  /* color:#F7E9EE; */
+  color: black;
+  font-size:1.6rem;
+  font-weight:700;
+}
+.title a:hover{ color:white; }
+
+/* ---------- Header: centered profile ---------- */
+.header{
+  border-left: 1px solid lightgrey;
+  display:flex;
+  border-radius: 8px;
+  flex-direction:column;
+  align-items:center;
+  width:100%;
+  height: 610px;
+}
+
+.profile-header{
+  margin-top: 20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  width:100%;
+  padding:0;
+  background:transparent;
+  color:black;
+}
+
+.cover-pic{
+  position:relative;
+  flex-shrink:0;
+}
+
+.profile-pic{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  overflow:hidden;
+  border:2px solid #C99A3D;
+  background:rgba(247,233,238,0.12);
+  position:relative;
+}
+
+.profile-header img#preview{
+  width:100%;
+  height:100%;
+  margin:0;
+  border:none;
+  border-radius:0;
+  object-fit:cover;
+  cursor:zoom-in;
+}
+
+/* Profile photo upload */
+.upload-icon{
+  position:absolute;
+  bottom:3px;
+  right:3px;
+  width:28px;
+  height:28px;
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#C99A3D;
+  border:2px solid #760031;
+  border-radius:50%;
+  /* color:#2A1620; */
+  color:#760031;
+  cursor:pointer;
+  z-index:2;
+}
+.upload-icon:hover{ background:#B08430; }
+.upload-icon i{ padding:0; font-size:11px; }
+
+/* User information */
+.user-info{
+  min-width:0;
+  margin-top:14px;
+}
+
+.user-info h1{
+  font-size:20px;
+  font-weight:600;
+  color:black;
+  margin-bottom:6px;
+  font-family: "Display", playfair;
+}
+
+.user-info p{
+  font-size:13px;
+  margin:2px 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+   font-family: "Display", playfair;
+}
+
+p{
+  margin-left:0;
+  font-size:15px;
+}
+
+.order-information{
+  display: flex;
+  margin: 0 0 40px 20px;
+}
+
+
+/* ---------- Form card ---------- */
+/* For Succed changes */
+.toast{
+  background: #0F4C4C;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+  border: 1px solid #156363;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+/* For user information */
+.profile-card{
+  display:block;
+  width:720px;
+  height: 350px;
+  margin-top:20px;
+  padding:32px;
+  background:#FFFFFF;
+  border:1px solid #EDD8DE;
+  border-radius:12px;
+  /* box-shadow:0 20px 40px -24px rgba(0,0,0,0.35); */
+}
+
+.profile-card form{
+  margin:0;
+  width:100%;
+}
+
+.profile-card label{
+  display:block;
+  width:100%;
+  border:1px solid #EDD8DE;
+  border-radius:8px;
+  font-weight:400;
+  transition:border-color .15s ease, background .15s ease;
+}
+.profile-card label:focus-within{
+  background:#FFFFFF;
+  outline: 2px solid #45172e;
+}
+
+
+.field label i{
+  display:none;
+}
+
+.field label input{
+  width:100%;
+  padding:11px 14px;
+  border:none !important;
+  border-radius:8px;
+  background:transparent;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:14px;
+  color:grey;
+  font-weight: 400;
+  outline:none;
+}
+.field label input:hover{ color: #45172e; outline: 1px solid black;}
+.field label input:focus{ color: #45172e; }
+
+
+.row, .row1{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-bottom:20px;
+}
+
+.field{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+
+.field h5{
+   font-family: "Display", playfair;
+  margin-bottom:7px;
+  font-size:15px;
+  font-weight:500;
+  color:gray;
+}
+
+.profile-card button{
+  width:49%;
+  padding:12px 20px;
+  border:none;
+  margin:17px 0 0 0;
+  background:#156363;
+  color:white;
+  font-family:'Times New Roman', Times, serif;
+  font-weight:600;
+  font-size:14px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:background .15s ease;
+}
+.profile-card button:hover{
+  background:white;
+  color:#0F4C4C;
+  border: 1px solid #0F4C4C;
+}
+
+.profile-card button i{
+  margin-right: 5px;
+}
+
+#password-change{
+  margin-left: 17px;
+  color:white;
+  font-weight:500;
+  font-size:14px;
+  text-decoration:none;
+  background: blue;
+  border-radius: 8px;
+  padding: 13px 93px 13px 93px;
+  font-family:'Times New Roman', Times, serif;
+
+}
+#password-change:hover{ background: darkblue; }
+#password-change i{
+  margin-right: 5px;
+}
+
+/* ---------- Order / side nav (vertical, sits beside content) ---------- */
+.order-view{
+  width:250px;
+  height: 500px;
+  flex-shrink:0;
+  background:#FFFFFF;
+  border:1px solid lightgray;
+  border-radius:8px;
+  margin: 35px 40px 20px 0;
+  padding: 18px;
+  /* box-shadow:0 20px 40px -24px rgba(0,0,0,0.35); */
+}
+
+.order-view div{
+  margin-top: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.order-view div:last-child{
+  border-bottom:none;
+}
+
+.order-view div a{
+  border-radius: 8px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  width:90%;
+  padding:11px 16px;
+
+  font-weight:100;
+  font-size:16px;
+  text-decoration:none;
+  outline: 1px solid #5A0E24;
+  /* background: #F7E9EE;  */
+  color:#5A0E24;
+
+}
+
+.order-view a i{
+  font-size:15px;
+  width:18px;
+  margin-right: 10px;
+}
+
+.order-view div a:hover{ 
+  color: #5A0E24;
+  background: #F7E9EE;
+  outline: 2px solid palevioletred;
+ }
+
+#logoutLink{
+  font-size: 17px; margin-top: 50px;background: red;border:1px solid red; color: white; text-align: center; outline:none; font-family:'Times New Roman', Times, serif; font-weight: bold; padding: 10px 0 10px 70px;
+}
+
+#logoutLink:hover{ background: darkred; border:1px solid darkred; }
+
+
+/* ---------- Empty state ---------- */
+.empty-msg{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  min-height:100vh;
+  padding:0 30px 32px 30px;
+  text-align:center;
+  font-size:1rem;
+}
+
+.empty-msg i{
+  font-size:32px;
+  margin:0;
+  color:#760031;
+}
+
+.error{
+  max-width:360px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.error h2{
+  font-family: "Display", playfair;
+  font-size:20px;
+  font-weight:500;
+  line-height:1.4;
+  margin:12px 0 22px;
+  color:black;
+}
+
+.error h3{
+    font-family: "Display", playfair;
+    font-size: 15px;
+    color: grey;
+    font-weight:200;
+    margin-bottom: 20px;
+
+}
+.msg{
+  display:flex;
+  gap:10px;
+}
+
+.msg button{
+  padding:11px 22px;
+  border:1px solid rgba(247,233,238,0.35);
+  border-radius:8px;
+  background:transparent;
+  color:white;
+  background: #A8213F;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight:500;
+  font-size:15px;
+  cursor:pointer;
+  transition:background .15s ease;
+}
+.msg login{
+     background: #A8213F;
+     color: white;
+}
+
+.msg button:hover{ background:rgba(247,233,238,0.12); color: black; border: 1px solid #A8213F; }
+.msg a:first-child button:hover{ background:rgba(247,233,238,0.12); color: black; border: 1px solid #A8213F; }
+
+.msg button a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.error-pic{ display:none; }
+
+
+/* ---------- Photo lightbox ---------- */
+.photo-modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  align-items:center;
+  justify-content:center;
+  background:rgba(24,4,14,0.85);
+  z-index:100;
+  padding:24px;
+}
+.photo-modal.active{
+  display:flex;
+}
+.photo-modal img{
+  max-width:min(90vw, 480px);
+  max-height:80vh;
+  width:auto;
+  height:auto;
+  border-radius:12px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.4);
+  cursor:default;
+}
+.photo-modal-close{
+  position:absolute;
+  top:24px;
+  right:28px;
+  width:40px;
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#F7E9EE;
+  font-size:18px;
+  border-radius:50%;
+  background:rgba(247,233,238,0.12);
+  cursor:pointer;
+}
+.photo-modal-close:hover{
+  background:rgba(247,233,238,0.22);
+}
+
+
+
+/* For sweetalert */
+.swal2-title {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #760031;
+}
+
+.swal2-html-container ul {
+  width: 100%;
+  margin-left: 30px;
+  text-align: center;
+  font-size: 17px;
+  color: grey;
+  list-style-position: inside;
+  padding-left: 0;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.swal2-html-container li {
+    margin-bottom: 4px;
+    list-style: none;
+}

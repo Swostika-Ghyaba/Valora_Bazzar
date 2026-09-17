@@ -1,0 +1,143 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .admin-page {
+            display: flex;
+        }
+        .side {
+            width: 250px;
+            background: #2c3e50;
+            min-height: 100vh;
+        }
+        .main-content {
+            flex: 1;
+            margin-left: 0;
+        }
+
+        h2 {
+            width: 80%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #760031;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin: 30px 0 40px 0;
+            border-bottom: 1px dashed black;
+            padding-bottom: 20px;
+        }
+
+        .title-content{ display: flex;}
+        .add-btn {
+
+            font-family: "Display", playfair;
+            background: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 50px 20px 30px 20px;
+            /* margin-bottom: 20px; */
+        }
+        .add-btn:hover { background: #F7E9EE; outline: 1px solid blue; color: blue; }
+        .admin-table {
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            overflow-x: auto;
+            border-collapse: collapse;
+        }
+        .admin-table th,
+        .admin-table td {
+            padding: 12px;
+            text-align: left;
+            
+
+        }
+        .admin-table th {
+                font-family: "Display", playfair;
+            /* background: #2c3e50; */
+            background: #760031;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            letter-spacing: 1.3px;
+            border-left: 1px solid gray;
+            font-size: 15px;
+            height:50px;
+        }
+
+        .admin-table td{
+                font-family: "Display", playfair;
+                border: 1px solid lightgrey;
+        }
+
+        td strong{
+            font-family: "Display", playfair;
+            width:20%;
+
+        }
+
+        td a{
+        width:30%;
+        }
+        .admin-table tr:hover { background: #f5f5f5; }
+        .product-img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .edit-btn {
+            font-family: "Display", playfair;
+            background: blue;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .delete-btn {
+            font-family: "Display", playfair;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .edit-btn:hover { background: #2980b9; }
+        .delete-btn:hover { background: #c0392b; }
+        .price { color: #e67e22; font-weight: bold; font-size: 15px; width: 100px; }
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 11px;
+        }
+        .badge-men { background: #3498db; color: white; margin-left: 9px; }
+        .badge-women { background: #e91e63; color: white; }
+        .badge-all { background: #9b59b6; color: white; margin-left: 12px; }
+        @media (max-width: 768px) {
+            .side { width: 200px; }
+            .admin-table { font-size: 12px; }
+            .admin-table th, .admin-table td { padding: 8px; }
+        }
+/* Action buttons in same line */
+.admin-table td:last-child {
+    white-space: nowrap;
+    width: 150px;
+}
+
+.admin-table td:last-child a,
+.admin-table td:last-child button {
+    display: inline-block;
+    margin: 0 2px;
+}

@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F7E9EE;
+}
+
+.forget{
+    padding: 40px 20px 30px;
+}
+.forget-pass{
+    width: 100%;
+    background-color: white;
+    height: 510px;
+    
+}
+ .login-form{
+    margin-top: 100px;
+    margin-left: 50px;
+    
+ }
+ .forget-title {
+padding: 20px 0 25px 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: #5A0E24;
+  letter-spacing: 2px;
+  border-bottom: 1px solid lightgray;
+}
+
+.account-info{ display: flex;}
+.account-info h3{
+  width: 85%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  color: brown;
+  border-bottom: 1px dashed black;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  padding: 30px 0 10px 10px;
+}
+
+.back-login{
+  width: 130px !important;
+  height: 30px;
+  background: #5A0E24;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 35px 0 0 15px;
+  padding-top: 10px;
+}
+
+.back-login a{ color:white; text-align: center; text-decoration:none; padding-left: 20px;}
+.forget-subtitle{ width: 100%; text-align: center; color: gray; font-style:italic}
+
+.form-input{
+    display: flex;
+    border: 1px solid #5A0E24;
+    /* background: red; */
+    width: 490px;
+    height: 50px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30%;
+    border-radius: 15px;
+ }
+ .form-input:hover{ outline: 2px solid #5A0E24;}
+
+
+.form-input i{
+    font-size: 18px;
+    color: white;
+ 
+}
+
+label{
+    padding: 0 5px  0 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    flex-shrink: 0;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5A0E24;
+}
+
+ input{
+    flex: 1;
+    margin-left: 10px;
+    height: 50px;
+    flex: 0.9;
+    border: none !important;
+    border-radius: 10px;
+    outline-offset: 1px;
+    padding-left: 20px;
+    font-size: 14px;
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+        box-sizing: border-box;
+}
+
+ input:focus{
+    border: none !important;
+    outline: none !important;
+ }
+
+ button{
+    font-family:'Times New Roman', Times, serif;
+    flex: 0.9;
+    border: none !important;
+    border-radius: 10px;
+    outline-offset: 1px;
+    padding: 15px 0 0 190px ;
+    font-size: 16px;
+    text-align: left;
+    background-color: rgb(60, 66, 122); 
+    /* background-color: #25343F; */
+    color: white;
+    margin: 30px 0 0 30%;
+    border-radius: 15px;
+    width: 490px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+ }
+ button:hover{
+    background: rgb(42, 50, 119)
+ }
+
+
+input::placeholder{
+    color: #5A0E24;
+}
+input:hover::placeholder{
+    font-weight: 200;
+    color:grey;
+}
+
+
+/* For sweetalert */
+/* SweetAlert branding - applies to all popups using these classes */
+
+#swal2-title{
+    font-size: 18px;
+}
+
+.swal2-html-container{
+    color: gray;
+    padding-left: 20px;padding-right: 20px;
+}
+.swal2-popup {
+    border-radius: 15px !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+.my-title {
+    color: #5A0E24 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px;
+}
+
+.my-text {
+    font-family: 'Times New Roman', Times, serif;
+    /* color: #5A0E24 !important; */
+    font-size: 17px !important;
+}
+
+.my-btn {
+    background-color: red!important;
+    color: white !important;
+    /* font-size: 15px !important; */
+    /* padding: 5px 25px 5px 25px !important; */
+    border-radius: 8px !important;
+    margin-bottom: 20px;
+    text-align: center;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-weight: 600;
+    width: 100px;
+    cursor: pointer;
+}
+
+.my-btn:hover {
+    background-color: darkred !important;
+}
+
+.my-btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.swal2-icon.swal2-error .swal2-x-mark-line-left,
+.swal2-icon.swal2-error .swal2-x-mark-line-right {
+    background-color: #5A0E24 !important;
+}
+
+/* Success icon color to match your teal/success theme */
+.swal2-icon.swal2-success {
+    border-color: #156363 !important;
+    color: #156363 !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+    border-color: #156363 !important;
+}
+
+.swal2-icon.swal2-success [class^='swal2-success-line'] {
+    background-color: #156363 !important;
+}

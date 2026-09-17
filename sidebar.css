@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F7E9EE;
+}
+
+/* Web Name information */
+.web-name{
+    display: flex;
+    margin-left: 40px;
+}
+
+
+.sidebar-page{
+    display: flex;
+}
+/* Sidebar fixed */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: rgb(35, 27, 27);
+    color: white;
+    padding: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1000;
+}
+
+/* Main content spacing */
+.main-content {
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    border-radius: 5px;
+    margin: 15px 0 0 0;
+    background: rgb(52, 51, 51);
+    padding: 0;
+}
+
+.sidebar ul li:hover { border: 1px solid lightgrey; background: rgb(35, 27, 27); }
+
+.sidebar ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 5px 10px 15px;
+    letter-spacing: 1.2px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover { color: orangered;}
+.sidebar ul li a.active {
+    background: lightgrey;
+    color: #760031;
+}
+
+.sidebar ul li a i{
+    margin-right: 20px;
+}
+
+
+
+.logout-btn {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.logout-btn:hover{ background: darkred;}
+
+

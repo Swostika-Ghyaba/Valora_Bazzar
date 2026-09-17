@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: linear-gradient(135deg, #F5788B, #151d1a);
+    color: white;
+}
+.login{
+    display: flex;
+    border: 1px solid whitesmoke;
+    width: 97%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.login-page{
+    margin-left: 0.3%;
+    width: 60%;
+    height: 560px;
+    border-right: 2px solid lightblue;
+    /* background-color: black; */
+    background-image: url("login_poster.png");
+    background-size: cover;
+}
+
+
+
+
+#web-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+ 
+}
+
+.logging{
+    width: 50%;
+    /* background-color: rgb(60, 66, 122); */
+    /* background-color: #25343F; */
+    height: 560px;
+    margin-right: 0.5%;
+}
+
+.content h3{
+    font-size: 27px;
+    color: white;
+}
+
+
+ .login-form{
+    margin-top: 70px;
+    margin-left: 50px;
+    
+ }
+ .login-form p{
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 10px;
+    color: lightgray;
+    font-family: 'Times New Roman', Times, serif;
+
+ }
+.form-input{
+    outline: 1px solid lightgray;
+    width: 480px;
+    height: 50px;
+    display: flex;
+    margin-top: 30px;
+    border-radius: 15px;
+    background:  #151d1a;
+ }
+label{
+    width: 20px;   
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+ input{
+    margin: 0;
+    height: 50px;
+    flex: 0.9;
+    border: none !important;
+    border-radius: 10px;
+    outline-offset: 1px;
+    padding-left: 10px;
+    font-size: 14px;
+    text-align: left;
+    /* background-color: rgb(60, 66, 122);  */
+    background: #151d1a;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ input:focus{
+    border: none !important;
+    outline: none !important;
+ }
+
+/* Login failed swal alert confirm button */
+.my-btn {
+  background-color: red !important;  
+  color: white !important;             
+  font-size: 16px !important;
+  padding: 10px 20px !important;
+  border-radius: 5px !important;      
+  border: none !important;           
+  outline: none !important;           
+  box-shadow: none !important; 
+  font-family: 'Times New Roman', Times, serif;
+  width: 100px;     
+  margin-top: 0 0 0 10px;  
+}
+
+.my-btn:focus {
+  outline: none !important;          
+  box-shadow: none !important;
+}
+.my-btn:hover{
+    background-color: green !important;
+}
+
+/* My text */
+.my-text{
+    color: #5A0E24;
+    font-size: 20px;
+}
+
+.swal2-html-container{
+    color: grey;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Form when hover */
+ .form-input:hover{
+    outline: 1px solid white;
+ }
+input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+input:hover::placeholder{
+    font-weight: 200;
+}
+ button{
+    width: 480px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+ }
+.log{
+    margin-top: 30px;
+    background-color: blue;
+    color: white;
+ }
+
+ #forget-password{
+    margin-top: 10px;
+    background-color: rgb(68, 32, 32);
+        /* background-color: #25343F; */
+        background-color: rgb(77, 39, 12);
+
+ }
+ #forget-password a{
+    text-decoration: none;
+    color: white;
+ }
+ #forget-password:hover{
+outline: 1px solid white;
+}
+ #signup{
+    margin-top: 20px;
+    outline: 1px solid skyblue;
+    /* background-color: rgb(60, 66, 122); */
+        background-color: #25343F;
+ }
+
+
+ #signup a{
+    text-decoration: none;
+    color: skyblue;
+}

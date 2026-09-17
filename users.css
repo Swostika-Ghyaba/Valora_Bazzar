@@ -1,0 +1,152 @@
+/* users.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f5f9f5;
+}
+
+.admin-page {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.side {
+    position: fixed;
+    width: 20%;
+}
+
+/* Main content */
+.main-contents {
+    width: 83%;
+    margin-left: 19%;
+    padding: 20px 30px;
+}
+
+.main-contents h2 {
+  width: 85%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #760031;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 30px 0 40px 0;
+  border-bottom: 1px dashed black;
+  padding-bottom: 20px;
+}
+
+.title-content{ display: flex;}
+.view-all-btn {
+            width: 15%;
+            font-family: "Display", playfair;
+            background: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 50px 20px 30px 20px;
+            text-align:center; text-decoration:none;
+        }
+.view-all-btn:hover { background: #F7E9EE; outline: 1px solid blue; color: blue; }
+
+
+/* Table styles */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.admin-table th, 
+.admin-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.admin-table th {
+    font-family: "Display", playfair;
+    letter-spacing: 1.3px;
+    background-color: #760031;
+    border-left: 1px solid gray;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.admin-table tbody tr td{ font-family:'Times New Roman', Times, serif; }
+
+.admin-table tr:hover { background-color: #ddd;}
+
+/* Edit/Delete buttons */
+.edit-btn, .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.edit-btn { background-color: #0288d1; }
+.edit-btn:hover { background-color: #0277bd; }
+
+.delete-btn { background-color: #d32f2f; }
+.delete-btn:hover { background-color: #b71c1c; }
+
+/* Form labels and inputs */
+label {
+    margin-top: 5px;
+    display: block;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+input, select {
+    width: 700px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 45px;
+    padding-left: 10px;
+}
+
+/* Profile image in table */
+.admin-table img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-page {
+        flex-direction: column;
+    }
+
+    .side {
+        width: 100%;
+        position: relative;
+    }
+
+    .main-contents {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    input, select {
+        width: 95%;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,392 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1a1a2e;
+    background: #F7E9EE;
+}
+
+.main-contents{
+    padding: 40px 20px 80px;
+}
+
+/* Wrapper */
+.wrap {
+    /* max-width: 820px; */
+        width: 100%;
+
+}
+
+/* Page Title */
+.page-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 24px;
+    font-weight: 600;
+  color: #5A0E24;
+  letter-spacing: 2px;
+}
+
+/* ---------- Tab Row ---------- */
+.tab-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 28px; */
+    border-bottom: 1px dashed black;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tabs {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #fff;
+    padding: 15px 5px 15px 5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.07);
+}
+
+.tabs h3{
+    width: 98%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  color: brown;
+  border-bottom: 1px solid lightgray;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  padding: 30px 0 10px 10px;
+}
+
+
+.order-status{
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.tab {
+    margin-top: 40px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6b7280;
+    padding: 10px 18px 10px 18px;
+    font-family: 'Times New Roman', Times, serif;
+    /* border-radius: 30px; */
+    text-align: center;
+    transition: background .2s, color .2s;
+    white-space: nowrap;
+    background: #f3f4f6;
+}
+
+.tab:hover {outline: 2px dashed #7a1230; background: white; color: black }
+
+.tab.active {
+    background: #7a1230;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* ---------- Order Card ---------- */
+.order-card {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #e8eaed;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,.05);
+    animation: fadeUp .45s ease both;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Card Top ---------- */
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 22px 14px;
+    border-bottom: 1px solid #f0f1f3;
+}
+
+.order-num {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #1a1a2e;
+}
+
+.order-date {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-top: 2px;
+}
+
+.card-top-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Buy button */
+.btn-buy {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background .2s, transform .15s;
+}
+.btn-buy:hover { background: white; transform: translateY(-1px); border: 1px solid black; color: black; }
+
+/*  Item Row */
+.item-row {
+    margin-left: 50px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 70px 1fr auto auto;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 22px;
+    border-bottom: 1px solid #f0f1f3;
+    transition: background .15s;
+}
+.item-row:hover { background: #fafafa; }
+.item-row:last-of-type { border-bottom: none; }
+
+/* Thumbnail */
+.item-thumb {
+    width: 80px;
+    height:8 0px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f3f4f6;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.item-thumb .no-img {
+    font-size: 1.5rem;
+}
+
+/* Item body */
+.item-body { min-width: 0; }
+
+.item-name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-sub {
+    font-size: 0.78rem;
+    color: #9ca3af;
+    margin-bottom: 4px;
+}
+.item-sub span { color: #6b7280; font-weight: 500; }
+
+.item-price {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+/* Status */
+.item-status { text-align: center; min-width: 90px; }
+.status-lbl  { font-size: 0.72rem; color: #9ca3af; margin-bottom: 4px; }
+
+.badge {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 50px;
+}
+.badge.Pending   { background: #fff7ed; color: #d97706; }
+.badge.Delivered { background: #f0fdf4; color: #16a34a; }
+.badge.Cancelled { background: #fef2f2; color: #dc2626; }
+
+/* Delivery */
+.item-delivery { text-align: right; min-width: 130px; }
+.delivery-lbl  { font-size: 0.72rem; color: #9ca3af; margin-bottom: 4px; }
+.delivery-val  { font-size: 0.85rem; font-weight: 600; color: #374151; }
+
+/* ---------- Card Footer ---------- */
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 22px;
+    background: #fafafa;
+    border-top: 1px solid #f0f1f3;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Cancel button */
+.btn-cancel {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #374151;
+    background: transparent;
+    border: 1.5px solid #d1d5db;
+    border-radius: 50px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: border-color .2s, color .2s;
+    text-decoration: none;
+}
+.btn-cancel:hover:not(.disabled) {
+    border-color: #dc2626;
+    color: #dc2626;
+}
+.btn-cancel.disabled {
+    opacity: .45;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* Payment status inline */
+.payment-ok {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #16a34a;
+}
+
+/* Promo tag */
+.promo-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #7c3aed;
+    background: #ede9fe;
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+
+/* Total */
+.total-val {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #5A0E24;
+    white-space: nowrap;
+}
+
+/*  Empty State  */
+.empty {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding: 80px 20px;
+    background: #fff;
+    border: 1px solid #e8eaed;
+}
+.empty-icon {
+    font-size: 3rem;
+    color: #d1d5db;
+    margin-bottom: 16px;
+}
+.empty h2 {
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 8px;
+}
+.empty p {
+    color: #9ca3af;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 24px;
+
+}
+.btn-shop {
+  text-decoration: none !important;
+  color: whitesmoke;
+  background-color: #7a1230;;
+  padding: 10px 30px 10px 30px;
+  height: 45px;
+  width: 160px;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 30px;
+  font-weight: 200;
+  border-radius: 5px;
+  /* border: 2px solid rgb(28, 3, 3); */
+}
+.btn-shop:hover { background: white; border: 2px solid #7a1230; color: #7a1230; }
+
+
+/* ---------- Responsive ---------- */
+@media (max-width: 620px) {
+    .item-row {
+        grid-template-columns: 58px 1fr;
+        grid-template-rows: auto auto;
+    }
+    .item-status, .item-delivery {
+        grid-column: 2;
+        text-align: left;
+    }
+    .card-top { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .card-top-right { width: 100%; justify-content: flex-end; }
+    .tab { padding: 6px 12px; font-size: 0.8rem; }
+}
+
+/* For swal sweet */
+.swal2-title{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:20px;
+        color:#5A0E24;
+ }
+
+ .swal2-html-container{
+    font-family: "playfair", serif;
+    font-size: 17px;
+    color: gray;
+ }
+ .swal2-confirm{     font-family: "playfair", serif; background: red;}
+ .swal2-cancel{     font-family: "playfair", serif; background: green;}
+ .swal2-cancel:hover{ background: darkgreen !important;}
